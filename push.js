@@ -6,6 +6,13 @@ const validKeys={
   }
 
   push.setVapidDetails('mailto:v.pius.pv@gmail.com',validKeys.publicKey,validKeys.privateKey);
-  let sub={}
+  let sub=
+    {
+        endpoint:"https://fcm.googleapis.com/fcm/send/draJPtLTWEw:APA91bHhFhfU1b2rITMeRpN3AuGpagk2c3gtLRVziLFhpJM8HFTVhc5goDwtE_H2SxrhwieO4xcVKdOjK2CJCM3dbpCRsFX4V0FZ7vkcIuWFDfEmTG_yBmOfL0nCPdr_wnDyv_fuIYgs",
+    expirationTime:null,
+    keys:{"p256dh":"BPp89auqICvJJ6lZOCQ4YE_RvkU2GkYFMb4XegSuXOT69iBl5JXYGhdtK40eBMyERozOr06uu2YBSFQrWzx9wjA",
+    auth:"yZxlV_SQCyjMr9XCfqIs-A"}
+}
+  
 
   push.sendNotification(sub,'text message')
